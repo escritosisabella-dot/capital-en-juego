@@ -1,18 +1,19 @@
 /**
  * Capital en Juego — Motor de Animaciones Lúdicas & UI (js/main.js)
- * Efectos elásticos, rebote de caricatura (Rubberhose), inclinación 3D y scroll reveals
+ * Efectos elásticos, rebote de caricatura (Rubberhose), inclinación 3D,
+ * confeti dinámico y tipografía animada interactiva.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Animación de rebote gelatinoso al hacer clic en el Emblema Oficial
   const emblemWrapper = document.querySelector('.emblem-wrapper');
   if (emblemWrapper) {
-    emblemWrapper.addEventListener('click', () => {
+    emblemWrapper.addEventListener('click', (e) => {
       emblemWrapper.classList.remove('wobble-active');
       void emblemWrapper.offsetWidth; // Forzar reflujo para reiniciar la animación
       emblemWrapper.classList.add('wobble-active');
-      
-      // Sonido o vibración háptica suave si el dispositivo lo soporta
+      createConfetti(e.clientX, e.clientY, 24);
+
       if (navigator.vibrate) {
         navigator.vibrate([30, 40, 30]);
       }
@@ -36,7 +37,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Filtro interactivo de la Galería con animación pop
+  // 3. Tipografía Cutout interactiva: rebote y confeti al tocar letras de "Capital en Juego"
+  const letters = document.querySelectorAll('.c-letter');
+  letters.forEach((letter) => {
+    letter.addEventListener('click', (e) => {
+      letter.style.transform = 'translateY(-20px) scale(1.4) rotate(15deg)';
+      createConfetti(e.clientX, e.clientY, 12);
+      setTimeout(() => {
+        letter.style.transform = '';
+      }, 350);
+    });
+  });
+
+  // 4. Confeti en botones principales
+  const ctaButtons = document.querySelectorAll('.btn-primary, .nav-btn');
+  ctaButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const rect = btn.getBoundingClientRect();
+      createConfetti(rect.left + rect.width / 2, rect.top + rect.height / 2, 28);
+    });
+  });
+
+  // 5. Filtro interactivo de la Galería con animación pop
   const filterBtns = document.querySelectorAll('.filter-btn');
   const galleryItems = document.querySelectorAll('.gallery-item');
 
@@ -66,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. Animaciones de revelado elásticas al hacer scroll (Intersection Observer)
+  // 6. Animaciones de revelado elásticas al hacer scroll (Intersection Observer)
   const revealElements = document.querySelectorAll('.feature-card, .objective-card, .concept-card, .step-card, .company-card, .gallery-item, .section-header');
   
   revealElements.forEach(el => el.classList.add('reveal-init'));
@@ -91,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => el.classList.add('reveal-visible'));
   }
 
-  // 5. Navbar Scrolled Glassmorphism Effect
+  // 7. Navbar Scrolled Glassmorphism Effect
   const navbar = document.querySelector('.navbar');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 35) {
@@ -101,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 6. Menú móvil
+  // 8. Menú móvil
   const mobileToggle = document.querySelector('.mobile-toggle');
   const navLinks = document.querySelector('.nav-links');
   if (mobileToggle && navLinks) {
@@ -121,5 +143,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  console.log('⚽ Capital en Juego: Motor de animaciones retro-cartoon activo.');
+  // 9. Cañón de Confeti Cartoon
+  function createConfetti(x, y, count = 20) {
+    const colors = ['#f87171', '#60a5fa', '#fde047', '#a3e635', '#fb923c', '#c084fc', '#ffffff'];
+    const shapes = ['square', 'circle', 'streamer'];
+
+    for (let i = 0; i < count; i++) {
+      const confetti = document.createElement('div');
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      const shape = shapes[Math.floor(Math.random() * shapes.length)];
+      const size = Math.random() * 8 + 6;
+
+      confetti.className = 'confetti-particle';
+      confetti.style.position = 'fixed';
+      confetti.style.left = `${x}px`;
+      confetti.style.top = `${y}px`;
+      confetti.style.width = `${size}px`;
+      confetti.style.height = shape === 'streamer' ? `${size * 2}px` : `${size}px`;
+      confetti.style.backgroundColor = color;
+      confetti.style.borderRadius = shape === 'circle' ? '50%' : '2px';
+      confetti.style.pointerEvents = 'none';
+      confetti.style.zIndex = '99999';
+      confetti.style.transition = 'all 0.9s cubic-bezier(0.25, 1, 0.5, 1)';
+
+      document.body.appendChild(confetti);
+
+      const angle = Math.random() * Math.PI * 2;
+      const velocity = Math.random() * 120 + 40;
+      const destX = Math.cos(angle) * velocity;
+      const destY = Math.sin(angle) * velocity - 30; // Tendencia hacia arriba
+      const rot = Math.random() * 720 - 360;
+
+      requestAnimationFrame(() => {
+        confetti.style.transform = `translate(${destX}px, ${destY}px) rotate(${rot}deg)`;
+        confetti.style.opacity = '0';
+      });
+
+      setTimeout(() => {
+        confetti.remove();
+      }, 950);
+    }
+  }
+
+  console.log('⚽ Capital en Juego: Motor de animaciones retro-cartoon activo v5.0.');
 });
