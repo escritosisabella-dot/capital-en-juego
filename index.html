@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Capital en Juego — Fútbol &amp; Administración de Empresas</title>
-  <meta name="description" content="Capital en Juego: El capital se administra, la estrategia se juega y el partido se gana en equipo." />
+  <title>Capital en Juego — Juega como empresa, piensa como estratega</title>
+  <meta name="description" content="Capital en Juego: Juega como empresa, piensa como estratega. Simulación deportiva y gerencial de fútbol y administración de empresas." />
 
   <!-- Tipografías Divertidas: Chewy, DynaPuff, Fredoka y Lilita One -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chewy&family=DynaPuff:wght@400;600;700;800&family=Fredoka:wght@400;500;600;700&family=Lilita+One&display=swap" rel="stylesheet">
 
-  <!-- Hoja de Estilos CSS -->
-  <link rel="stylesheet" href="css/styles.css?v=7.0" />
+  <!-- Hoja de Estilos CSS Adaptable para PC y Móvil -->
+  <link rel="stylesheet" href="css/styles.css?v=8.0" />
 </head>
 <body>
 
@@ -30,7 +30,8 @@
         <div class="brand-text">capital en <span>juego</span></div>
       </a>
 
-      <ul class="nav-links">
+      <!-- Links de navegación con soporte mobile/desktop -->
+      <ul class="nav-links" id="nav-menu">
         <li><a href="#concepto">Concepto</a></li>
         <li><a href="#objetivo">Objetivo</a></li>
         <li><a href="#conceptos">Conceptos</a></li>
@@ -38,17 +39,35 @@
         <li><a href="#mecanica">Mecánica</a></li>
         <li><a href="#por-que">¿Por qué Admin?</a></li>
         <li><a href="#galeria">Galería</a></li>
+        <li class="nav-mobile-action">
+          <a href="#equipos" class="nav-btn nav-btn-mobile">
+            <span class="anim-icon icon-sm">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </span>
+            Ver Equipos
+          </a>
+        </li>
       </ul>
 
-      <a href="#equipos" class="nav-btn">
+      <!-- Botón de acción en Desktop -->
+      <a href="#equipos" class="nav-btn nav-btn-desktop">
         <span class="anim-icon icon-sm">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
         </span>
         Ver Equipos
       </a>
-      <button class="mobile-toggle" aria-label="Abrir menú">☰</button>
+
+      <!-- Botón Hamburguesa Animado -->
+      <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span class="hamburger-bar bar-1"></span>
+        <span class="hamburger-bar bar-2"></span>
+        <span class="hamburger-bar bar-3"></span>
+      </button>
     </div>
   </nav>
+
+  <!-- Overlay para cerrar menú en móviles -->
+  <div class="nav-overlay" id="nav-overlay"></div>
 
   <!-- Sección Hero -->
   <header class="hero">
@@ -79,7 +98,7 @@
               <span class="c-letter c-n">n</span>
             </span>
           </div>
-          <div class="title-row title-row-juego">
+          <div class="title-row-juego">
             <span class="title-word">
               <span class="c-letter c-j">j</span>
               <span class="c-letter c-u">u</span>
@@ -103,10 +122,10 @@
           </div>
         </h1>
 
-        <!-- Nuevo Eslogan Oficial de Capital en Juego -->
+        <!-- Eslogan Oficial Solicitado por el Usuario -->
         <div class="hero-slogan-box">
           <span class="slogan-badge-label">Eslogan Oficial</span>
-          <p class="hero-slogan">«El capital se administra, la estrategia se juega y el partido se gana en equipo.»</p>
+          <p class="hero-slogan">«Juega como empresa, piensa como estratega»</p>
         </div>
 
         <p class="lead">
@@ -184,11 +203,11 @@
     </div>
   </header>
 
-  <!-- Cinta Ticker Marquee -->
+  <!-- Cinta Ticker Marquee con el nuevo Eslogan -->
   <div class="marquee-strip">
     <div class="marquee-track">
-      <div class="marquee-item">✦ EL BALÓN REPRESENTA EL CAPITAL ✦ DOS EMPRESAS EN DISPUTA ✦ COORDINACIÓN EN PAREJAS ✦ ESTRATEGIA Y TOMA DE DECISIONES ✦ CON CHAQUETA VS SIN CHAQUETA ✦</div>
-      <div class="marquee-item">✦ EL BALÓN REPRESENTA EL CAPITAL ✦ DOS EMPRESAS EN DISPUTA ✦ COORDINACIÓN EN PAREJAS ✦ ESTRATEGIA Y TOMA DE DECISIONES ✦ CON CHAQUETA VS SIN CHAQUETA ✦</div>
+      <div class="marquee-item">✦ JUEGA COMO EMPRESA, PIENSA COMO ESTRATEGA ✦ EL BALÓN REPRESENTA EL CAPITAL ✦ DOS EMPRESAS EN DISPUTA ✦ COORDINACIÓN EN PAREJAS ✦ CON CHAQUETA VS SIN CHAQUETA ✦</div>
+      <div class="marquee-item">✦ JUEGA COMO EMPRESA, PIENSA COMO ESTRATEGA ✦ EL BALÓN REPRESENTA EL CAPITAL ✦ DOS EMPRESAS EN DISPUTA ✦ COORDINACIÓN EN PAREJAS ✦ CON CHAQUETA VS SIN CHAQUETA ✦</div>
     </div>
   </div>
 
@@ -329,7 +348,6 @@
         <!-- Empresa A: Con Chaqueta -->
         <div class="team-card con-chaqueta">
           <div class="team-card-header">
-            <!-- Icono Ilustrado de Chaqueta Azul -->
             <div class="team-badge-icon anim-pulse">
               <svg viewBox="0 0 100 100" fill="none" stroke="#93c5fd" stroke-width="4">
                 <path d="M30 20 L50 35 L70 20 L88 38 L76 90 L24 90 L12 38 Z" fill="#2563eb" stroke="#ffffff" stroke-width="4"/>
@@ -364,7 +382,6 @@
         <!-- Empresa B: Sin Chaqueta -->
         <div class="team-card sin-chaqueta">
           <div class="team-card-header">
-            <!-- Icono Ilustrado de Camiseta Roja -->
             <div class="team-badge-icon anim-pulse">
               <svg viewBox="0 0 100 100" fill="none">
                 <path d="M34 20 L50 28 L66 20 L84 34 L72 88 L28 88 L16 34 Z" fill="#ef4444" stroke="#ffffff" stroke-width="4"/>
@@ -538,7 +555,7 @@
         <div class="why-admin-box">
           <h4>
             <span class="anim-icon icon-md" style="color:var(--gold-bright);">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
             </span>
             Integración Interdisciplinaria
           </h4>
@@ -583,7 +600,7 @@
     </div>
   </section>
 
-  <!-- Footer con Créditos Requeridos -->
+  <!-- Footer con Créditos Requeridos y Eslogan -->
   <footer>
     <div class="container">
       <div class="footer-inner">
@@ -595,11 +612,11 @@
         </a>
 
         <div class="footer-quote">
-          «El capital se administra, la estrategia se juega y el partido se gana en equipo.»
+          «Juega como empresa, piensa como estratega»
         </div>
       </div>
 
-      <!-- Bloque de Autores Requerido -->
+      <!-- Bloque de Autores -->
       <div class="footer-credits-card">
         <div class="credits-badge-wrap">
           <span class="credits-badge">Proyecto de Grado &amp; Académico</span>
@@ -618,7 +635,7 @@
     </div>
   </footer>
 
-  <!-- Script JavaScript con motor de animaciones y confeti -->
-  <script src="js/main.js?v=7.0"></script>
+  <!-- Script JavaScript con menú móvil y animaciones -->
+  <script src="js/main.js?v=8.0"></script>
 </body>
 </html>
