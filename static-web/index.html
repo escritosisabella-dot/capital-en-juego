@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capital en Juego | La Estrategia También Juega</title>
+  
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Titan+One&display=swap" rel="stylesheet">
+  
+  <!-- Hoja de Estilos CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="ambient-glow"></div>
+
+  <!-- Barra de Navegación -->
+  <nav>
+    <a href="#" class="brand">
+      <div class="brand-logo-small">
+        <img src="assets/logo-transparent.png" alt="Logo Capital en Juego" />
+      </div>
+      <div class="brand-title">CAPITAL EN <span>JUEGO</span></div>
+    </a>
+    <div class="nav-actions">
+      <button id="btn-download-trigger" class="btn btn-secondary" onclick="descargarProyecto()">
+        Descargar Archivos (.ZIP)
+      </button>
+    </div>
+  </nav>
+
+  <!-- Sección Principal (Hero) -->
+  <main>
+    <div class="hero-info">
+      <div class="pill-badge">
+        ⚽ Negocios &amp; Fútbol Profesional
+      </div>
+      <h1>
+        Donde las Finanzas y la Pasión <span class="highlight">Se Disputan</span>.
+      </h1>
+      <p class="lead">
+        Análisis ejecutivo, economía de fichajes y estrategias de arbitraje financiero en el deporte rey. La estrategia también juega.
+      </p>
+      <div class="cta-group">
+        <a href="#contacto" class="btn btn-primary">Explorar Dossier</a>
+        <button class="btn btn-secondary" onclick="cambiarModo('original')">Ver Lienzo Original</button>
+      </div>
+    </div>
+
+    <!-- Módulo del Logotipo Oficial -->
+    <div class="logo-showcase-card">
+      <div class="card-topbar">
+        <span class="badge-title">★ Emblema Oficial</span>
+        <div class="mode-switch">
+          <button id="btn-original" class="active" onclick="cambiarModo('original')">Lienzo Original</button>
+          <button id="btn-badge" onclick="cambiarModo('badge')">Insignia</button>
+        </div>
+      </div>
+
+      <div class="logo-stage">
+        <!-- Vista 1: Lienzo Original Marfil -->
+        <div id="view-original" class="frame-original floating-logo">
+          <img src="assets/logo.png" alt="Logotipo Oficial Capital en Juego" />
+        </div>
+
+        <!-- Vista 2: Insignia Flotante Transparente -->
+        <div id="view-badge" class="frame-badge floating-logo" style="display: none;">
+          <img src="assets/logo-transparent.png" alt="Insignia Capital en Juego" />
+        </div>
+      </div>
+
+      <div class="card-footer">
+        Identidad Corporativa — <strong>«Capital en Juego»</strong>
+      </div>
+    </div>
+  </main>
+
+  <!-- Script JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+</html>

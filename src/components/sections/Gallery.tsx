@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Camera, Eye, Filter, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { GALLERY_ITEMS } from '../data/gameData';
-import { GalleryItem } from '../types';
+import { GALLERY_ITEMS } from '../../data/gameData';
+import { GalleryItem } from '../../types';
 
 export const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('todas');

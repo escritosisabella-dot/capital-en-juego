@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { WhatIsIt } from './components/WhatIsIt';
-import { Objectives } from './components/Objectives';
-import { AdminConcepts } from './components/AdminConcepts';
-import { CompanyPanel } from './components/CompanyPanel';
-import { HowToPlay } from './components/HowToPlay';
-import { CompaniesComparison } from './components/CompaniesComparison';
-import { Gallery } from './components/Gallery';
-import { Learnings } from './components/Learnings';
-import { Footer } from './components/Footer';
+import { Navbar } from './components/layout/Navbar';
+import { Hero } from './components/layout/Hero';
+import { WhatIsIt } from './components/sections/WhatIsIt';
+import { Objectives } from './components/sections/Objectives';
+import { AdminConcepts } from './components/sections/AdminConcepts';
+import { CompanyPanel } from './components/sections/CompanyPanel';
+import { HowToPlay } from './components/sections/HowToPlay';
+import { CompaniesComparison } from './components/sections/CompaniesComparison';
+import { Gallery } from './components/sections/Gallery';
+import { Learnings } from './components/sections/Learnings';
+import { Footer } from './components/layout/Footer';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState<string>('inicio');

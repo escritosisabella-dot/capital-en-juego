@@ -1,6 +1,6 @@
 import { Target, Users, Brain, Coins, Compass, CheckCircle } from 'lucide-react';
 import { motion } from 'motion/react';
-import { OBJECTIVES } from '../data/gameData';
+import { OBJECTIVES } from '../../data/gameData';
 
 export const Objectives = () => {
   const getIcon = (iconName: string) => {

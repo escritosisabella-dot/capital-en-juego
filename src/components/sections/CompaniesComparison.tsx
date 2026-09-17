@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Building, Trophy, Shield, Target, Users, Zap, CheckCircle2, Award } from 'lucide-react';
 import { motion } from 'motion/react';
-import { COMPANIES_DATA } from '../data/gameData';
+import { COMPANIES_DATA } from '../../data/gameData';
 
 export const CompaniesComparison = () => {
   return (

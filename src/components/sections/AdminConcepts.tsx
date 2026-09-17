@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Briefcase, Building, Coins, TrendingUp, Users, Zap, Brain, ArrowUpRight, CheckCircle2, X } from 'lucide-react';
 import { motion } from 'motion/react';
-import { ADMIN_CONCEPTS } from '../data/gameData';
-import { AdminConcept } from '../types';
+import { ADMIN_CONCEPTS } from '../../data/gameData';
+import { AdminConcept } from '../../types';
 
 export const AdminConcepts = () => {
   const [selectedConcept, setSelectedConcept] = useState<AdminConcept | null>(null);

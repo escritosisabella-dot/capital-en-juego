@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Play, RotateCcw, Shield, Trophy, CheckCircle, Flag, ArrowRight, Activity } from 'lucide-react';
 import { motion } from 'motion/react';
-import { GAME_RULES } from '../data/gameData';
+import { GAME_RULES } from '../../data/gameData';
 
 export const HowToPlay = () => {
   const [activeStepIndex, setActiveStepIndex] = useState(0);

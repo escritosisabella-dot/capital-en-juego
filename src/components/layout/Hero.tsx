@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ArrowDown, Trophy, Shield, Sparkles, Play, CheckCircle2, Award, Image as ImageIcon, Download } from 'lucide-react';
 import { motion } from 'motion/react';
-import { DownloadModal } from './DownloadModal';
+import { DownloadModal } from '../modals/DownloadModal';
 
 export const Hero = () => {
   const [logoMode, setLogoMode] = useState<'original' | 'transparent'>('original');
