@@ -458,33 +458,27 @@ body {
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7), 0 0 50px rgba(244, 179, 40, 0.3);
 }
 
-.card-tabs {
+.showcase-badge-wrap {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 0.35rem;
-  border-radius: var(--radius-full);
   margin-bottom: 1.5rem;
-  border: 1px solid var(--border-subtle);
 }
 
-.card-tab-btn {
-  background: transparent;
-  border: none;
-  color: var(--text-secondary);
-  padding: 0.5rem 1.25rem;
+.badge-emblema {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(244, 179, 40, 0.1);
+  border: 1px solid var(--border-highlight);
+  color: var(--gold-light);
+  padding: 0.45rem 1.25rem;
   border-radius: var(--radius-full);
-  font-size: 0.85rem;
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
   font-weight: 700;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-.card-tab-btn.active {
-  background: var(--gold-primary);
-  color: #06090e;
-  box-shadow: 0 3px 12px var(--gold-glow);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .showcase-display {

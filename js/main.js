@@ -4,42 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Conmutador del Logotipo Showcase en Hero con el nuevo Emblema
-  const tabBtns = document.querySelectorAll('.card-tab-btn');
-  const imgLogo = document.getElementById('showcase-logo-img');
-
-  if (tabBtns && imgLogo) {
-    tabBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        tabBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        const mode = btn.getAttribute('data-mode');
-        imgLogo.style.opacity = '0';
-        imgLogo.style.transform = 'scale(0.92)';
-
-        setTimeout(() => {
-          if (mode === 'emblema') {
-            imgLogo.src = 'assets/capital-en-juego-emblema.jpg';
-            imgLogo.alt = 'Emblema Oficial Capital en Juego';
-            imgLogo.classList.add('emblem-img');
-          } else if (mode === 'original') {
-            imgLogo.src = 'assets/logo.png';
-            imgLogo.alt = 'Logotipo Oficial en Lienzo';
-            imgLogo.classList.remove('emblem-img');
-          } else if (mode === 'badge') {
-            imgLogo.src = 'assets/logo-transparent.png';
-            imgLogo.alt = 'Insignia Flotante Transparente';
-            imgLogo.classList.remove('emblem-img');
-          }
-          imgLogo.style.opacity = '1';
-          imgLogo.style.transform = 'scale(1)';
-        }, 200);
-      });
-    });
-  }
-
-  // 2. Efecto de inclinación 3D al mover el ratón en la tarjeta Hero
+  // 1. Efecto de inclinación 3D al mover el ratón en la tarjeta del Emblema Oficial
   const heroCard = document.querySelector('.hero-card');
   if (heroCard) {
     heroCard.addEventListener('mousemove', (e) => {

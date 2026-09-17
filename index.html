@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
   <!-- Hoja de Estilos CSS con Animaciones -->
-  <link rel="stylesheet" href="css/styles.css?v=2.0" />
+  <link rel="stylesheet" href="css/styles.css?v=3.0" />
 </head>
 <body>
 
@@ -78,10 +78,13 @@
 
       <!-- Tarjeta Showcase con la nueva imagen del Emblema -->
       <div class="hero-card">
-        <div class="card-tabs">
-          <button class="card-tab-btn active" data-mode="emblema">Emblema Oficial</button>
-          <button class="card-tab-btn" data-mode="original">Lienzo Clásico</button>
-          <button class="card-tab-btn" data-mode="badge">Insignia</button>
+        <div class="showcase-badge-wrap">
+          <span class="badge-emblema">
+            <span class="flat-icon" style="color: var(--gold-primary); width: 16px; height: 16px;">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </span>
+            Emblema Oficial
+          </span>
         </div>
 
         <div class="showcase-display">
@@ -708,6 +711,6 @@
   </footer>
 
   <!-- Script JavaScript con motor de animaciones -->
-  <script src="js/main.js?v=2.0"></script>
+  <script src="js/main.js?v=3.0"></script>
 </body>
 </html>
