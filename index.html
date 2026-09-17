@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Capital en Juego — La Estrategia También Juega</title>
-  <meta name="description" content="Actividad deportiva y gerencial que une el fútbol con la administración de empresas. La estrategia también juega." />
+  <title>Capital en Juego — Fútbol &amp; Administración de Empresas</title>
+  <meta name="description" content="Capital en Juego es un juego competitivo donde dos empresas compiten por proteger su capital y conseguir el capital de la empresa rival." />
 
-  <!-- Tipografías Divertidas & Recorte de Papel (DynaPuff, Fredoka, Lilita One) -->
+  <!-- Tipografías Divertidas: Chewy, DynaPuff, Fredoka y Lilita One -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600;700;800;900&family=Fredoka:wght@400;500;600;700&family=Lilita+One&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=DynaPuff:wght@400;600;700;800&family=Fredoka:wght@400;500;600;700&family=Lilita+One&display=swap" rel="stylesheet">
 
-  <!-- Hoja de Estilos CSS con Animaciones Lúdicas -->
-  <link rel="stylesheet" href="css/styles.css?v=5.0" />
+  <!-- Hoja de Estilos CSS -->
+  <link rel="stylesheet" href="css/styles.css?v=6.0" />
 </head>
 <body>
 
@@ -20,26 +20,27 @@
   <div class="ambient-stadium-glow"></div>
   <div class="ambient-pitch-lines"></div>
 
-  <!-- Barra de Navegación con Glassmorphism -->
+  <!-- Barra de Navegación -->
   <nav class="navbar">
     <div class="container nav-inner">
       <a href="#" class="brand">
         <div class="brand-logo">
-          <img src="assets/capital-en-juego-emblema.jpg" alt="Emblema Capital en Juego" />
+          <img src="assets/capital-en-juego-emblema.jpg" alt="Logo Capital en Juego" />
         </div>
-        <div class="brand-text">CAPITAL EN <span>JUEGO</span></div>
+        <div class="brand-text">capital en <span>juego</span></div>
       </a>
 
       <ul class="nav-links">
-        <li><a href="#que-es">¿Qué es?</a></li>
-        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#concepto">Concepto</a></li>
+        <li><a href="#objetivo">Objetivo</a></li>
         <li><a href="#conceptos">Conceptos</a></li>
-        <li><a href="#como-se-juega">Cómo se Juega</a></li>
-        <li><a href="#empresas">Empresas</a></li>
+        <li><a href="#equipos">Equipos</a></li>
+        <li><a href="#mecanica">Mecánica</a></li>
+        <li><a href="#por-que">¿Por qué Admin?</a></li>
         <li><a href="#galeria">Galería</a></li>
       </ul>
 
-      <a href="#empresas" class="nav-btn">Ver Equipos</a>
+      <a href="#equipos" class="nav-btn">Ver Equipos</a>
       <button class="mobile-toggle" aria-label="Abrir menú">☰</button>
     </div>
   </nav>
@@ -50,666 +51,322 @@
       <div class="hero-text">
         <div class="badge">
           <span class="live-dot"></span>
-          <span>Estrategia &amp; Fútbol Gerencial</span>
+          <span>⚽💼 Administración de Empresas &amp; Deporte</span>
         </div>
-        <h1 class="rainbow-title" style="margin-bottom: 1rem;">
-          <span style="display:inline-flex; gap: 3px;">
-            <span class="c-letter c-red">C</span>
-            <span class="c-letter c-yellow">A</span>
-            <span class="c-letter c-blue">P</span>
-            <span class="c-letter c-green">I</span>
-            <span class="c-letter c-orange">T</span>
-            <span class="c-letter c-yellow">A</span>
-            <span class="c-letter c-purple">L</span>
-          </span>
-          <span style="display:inline-flex; margin: 0 0.4rem; font-family: var(--font-cutout); font-size: 0.8em; color: var(--gold-bright);">EN</span>
-          <span style="display:inline-flex; gap: 3px;">
-            <span class="c-letter c-green">J</span>
-            <span class="c-letter c-yellow">U</span>
-            <span class="c-letter c-red">E</span>
-            <span class="c-letter c-blue">G</span>
-            <span class="c-letter c-orange">O</span>
-          </span>
+
+        <!-- Título Cutout Colorido idéntico a la imagen de referencia en minúsculas -->
+        <h1 class="rainbow-title">
+          <span class="c-letter c-c">c</span>
+          <span class="c-letter c-a">a</span>
+          <span class="c-letter c-p">p</span>
+          <span class="c-letter c-i">i</span>
+          <span class="c-letter c-t">t</span>
+          <span class="c-letter c-a">a</span>
+          <span class="c-letter c-l">l</span>
+          <span class="c-space"> </span>
+          <span class="c-letter c-e">e</span>
+          <span class="c-letter c-n">n</span>
+          <span class="c-space"> </span>
+          <span class="c-letter c-j">j</span>
+          <span class="c-letter c-u">u</span>
+          <span class="c-letter c-e">e</span>
+          <span class="c-letter c-g">g</span>
+          <span class="c-letter c-o">o</span>
         </h1>
-        <h2 style="font-family: var(--font-fun); font-size: clamp(1.35rem, 2.4vw, 2rem); font-weight: 700; color: #ffffff; margin-bottom: 1.25rem; line-height: 1.3;">
-          Donde las Finanzas y la Pasión <span class="highlight">Se Disputan en la Cancha</span>.
-        </h2>
+
         <p class="lead">
-          Una simulación táctica sobre el campo donde el balón representa el capital financiero de tu empresa. Administra, defiende tus activos y ejecuta fusiones empresariales en tiempo real.
+          La <strong>mecánica sigue siendo solo robar el balón</strong>, pero la explicación, el objetivo y los conceptos representan claramente la <strong>Administración de Empresas</strong>.
         </p>
+
         <div class="hero-actions">
-          <a href="#como-se-juega" class="btn btn-primary">
-            <!-- Icono Balón -->
-            <span class="flat-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-            </span>
-            Conocer las Reglas
+          <a href="#mecanica" class="btn btn-primary">
+            👟 Conocer la Mecánica
           </a>
-          <a href="#conceptos" class="btn btn-outline">
-            <!-- Icono Gráfica -->
-            <span class="flat-icon">
-              <svg viewBox="0 0 24 24"><path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"/><path d="M4 19h16v2H4z"/></svg>
-            </span>
-            Conceptos Clave
+          <a href="#equipos" class="btn btn-outline">
+            🏢 Ver los Equipos
           </a>
         </div>
       </div>
 
-      <!-- Tarjeta Showcase del Emblema Oficial -->
-      <div class="hero-card">
-        <div class="showcase-badge-wrap">
-          <span class="badge-emblema">
-            <span class="flat-icon" style="color: var(--gold-bright); width: 18px; height: 18px;">
-              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            </span>
-            Emblema Oficial
-          </span>
-        </div>
-
-        <div class="showcase-display" title="¡Haz clic en el emblema para ver el rebote!">
-          <div class="emblem-wrapper">
-            <div class="emblem-glow"></div>
-            <!-- Billetes y destellos animados -->
-            <span class="floating-sparkle sparkle-1">💵</span>
-            <span class="floating-sparkle sparkle-2">✨</span>
-            <span class="floating-sparkle sparkle-3">💰</span>
-            <img id="showcase-logo-img" class="emblem-img" src="assets/capital-en-juego-emblema.jpg" alt="Emblema Oficial Capital en Juego" />
-          </div>
-        </div>
-
-        <div class="card-caption">
-          ¡Haz clic en el emblema! — <strong>«La Estrategia También Juega»</strong>
+      <!-- Emblema Oficial Grande SIN Cuadrado / SIN Caja Alrededor -->
+      <div class="hero-logo-standalone">
+        <div class="emblem-wrapper-standalone" title="¡Haz clic en el logo para hacerlo rebotar!">
+          <div class="emblem-glow-circle"></div>
+          <span class="floating-sparkle sparkle-1">💵</span>
+          <span class="floating-sparkle sparkle-2">✨</span>
+          <span class="floating-sparkle sparkle-3">💰</span>
+          <span class="floating-sparkle sparkle-4">⚽</span>
+          <img id="showcase-logo-img" class="emblem-img-standalone" src="assets/capital-en-juego-emblema.jpg" alt="Emblema Oficial Capital en Juego" />
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Cinta Ticker Marquee Animada -->
+  <!-- Cinta Ticker Marquee -->
   <div class="marquee-strip">
     <div class="marquee-track">
-      <div class="marquee-item">⚽ FÚTBOL GERENCIAL ✦ LA ESTRATEGIA TAMBIÉN JUEGA ✦ PROTEGE TU CAPITAL ✦ FUSIONES CORPORATIVAS ✦ DUPLAS TÁCTICAS ✦ TIEMPO EXTRA</div>
-      <div class="marquee-item">⚽ FÚTBOL GERENCIAL ✦ LA ESTRATEGIA TAMBIÉN JUEGA ✦ PROTEGE TU CAPITAL ✦ FUSIONES CORPORATIVAS ✦ DUPLAS TÁCTICAS ✦ TIEMPO EXTRA</div>
+      <div class="marquee-item">⚽ EL BALÓN REPRESENTA EL CAPITAL ✦ DOS EMPRESAS EN DISPUTA ✦ COORDINACIÓN EN PAREJAS ✦ ESTRATEGIA Y TOMA DE DECISIONES ✦ CON CHAQUETA VS SIN CHAQUETA</div>
+      <div class="marquee-item">⚽ EL BALÓN REPRESENTA EL CAPITAL ✦ DOS EMPRESAS EN DISPUTA ✦ COORDINACIÓN EN PAREJAS ✦ ESTRATEGIA Y TOMA DE DECISIONES ✦ CON CHAQUETA VS SIN CHAQUETA</div>
     </div>
   </div>
 
-  <!-- Sección: ¿Qué es? -->
-  <section id="que-es">
+  <!-- Sección: Concepto y Objetivo -->
+  <section id="concepto">
     <div class="container">
       <div class="section-header">
-        <span class="section-subtitle">
-          <span class="flat-icon" style="color: var(--gold-bright);">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </span>
-          Propuesta de Valor
-        </span>
-        <h2 class="section-title">¿Qué es <span>Capital en Juego</span>?</h2>
-        <p class="section-description">
-          Una simulación táctica sobre el terreno de juego diseñada para potenciar la estrategia, el liderazgo y la toma de decisiones en equipo.
-        </p>
+        <span class="section-subtitle">💡 Fundamentos</span>
+        <h2 class="section-title">El <span>Concepto</span></h2>
       </div>
 
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="icon-badge">
-            <span class="flat-icon flat-icon-lg">
-              <!-- Icono Maletín de Dinero / Capital -->
-              <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2zm2 10c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2z"/></svg>
-            </span>
-          </div>
-          <h3>El Balón es tu Capital</h3>
-          <p>El activo más valioso de la organización se disputa en la cancha. Perder el balón equivale a una pérdida de liquidez crítica que deja al equipo expuesto a la quiebra.</p>
+      <div class="concept-lead-box">
+        <div class="concept-lead-icon">💡</div>
+        <div class="concept-lead-text">
+          <h3>Inspirado en Captura la Bandera</h3>
+          <p>
+            <strong>Capital en Juego</strong> es un juego competitivo inspirado en <em>captura la bandera</em>, en el que dos empresas compiten por <strong>proteger su capital y conseguir el capital de la empresa rival</strong>.
+          </p>
+          <p style="margin-top: 1rem;">
+            Cada balón de fútbol representa el <strong>capital</strong> de una empresa. Los participantes deberán trabajar en parejas y coordinarse para intentar llevar el capital contrario hasta su propia empresa.
+          </p>
         </div>
+      </div>
 
-        <div class="feature-card">
-          <div class="icon-badge">
-            <span class="flat-icon flat-icon-lg">
-              <!-- Icono Equipo / Duplas -->
-              <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-            </span>
-          </div>
-          <h3>Sinergia en Duplas</h3>
-          <p>Nadie opera individualmente. Cada jugada exige sincronización táctica entre parejas para proteger la base de operaciones y orquestar avances coordinados.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="icon-badge">
-            <span class="flat-icon flat-icon-lg">
-              <!-- Icono Trofeo / Victoria -->
-              <svg viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
-            </span>
-          </div>
-          <h3>Absorción en Tiempo Real</h3>
-          <p>Al recuperar y trasladar el balón adversario hasta tu base propia, consigues la consolidación patrimonial definitiva y la victoria del encuentro.</p>
+      <!-- Objetivo Administrativo -->
+      <div id="objetivo" class="concept-lead-box" style="border-color: var(--gold-bright);">
+        <div class="concept-lead-icon">🎯</div>
+        <div class="concept-lead-text">
+          <h3>Objetivo Administrativo</h3>
+          <p>
+            El juego busca representar de una manera práctica la <strong>competencia entre empresas por los recursos económicos</strong>.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección: Objetivos -->
-  <section id="objetivos">
+  <!-- Sección: Conceptos de Administración de Empresas -->
+  <section id="conceptos" style="background: rgba(10, 20, 16, 0.5);">
     <div class="container">
       <div class="section-header">
-        <span class="section-subtitle">
-          <span class="flat-icon" style="color: var(--gold-bright);">
-            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg>
-          </span>
-          Metas del Programa
-        </span>
-        <h2 class="section-title">Objetivos <span>Estratégicos</span></h2>
+        <span class="section-subtitle">📚 Aprendizaje Práctico</span>
+        <h2 class="section-title">Conceptos de <span>Administración</span></h2>
         <p class="section-description">
-          Habilidades directivas puestas a prueba bajo el dinamismo y la intensidad del juego.
-        </p>
-      </div>
-
-      <div class="objectives-grid">
-        <div class="objective-card">
-          <div class="objective-top">
-            <span class="flat-icon flat-icon-lg" style="color: var(--gold-bright);">
-              <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-            </span>
-            <span class="objective-badge">100% Sinergia en Cancha</span>
-          </div>
-          <h4>1. Desarrollar el trabajo en equipo</h4>
-          <p>Fomentar la comunicación directa y el soporte constante al maniobrar permanentemente en parejas interconectadas.</p>
-        </div>
-
-        <div class="objective-card">
-          <div class="objective-top">
-            <span class="flat-icon flat-icon-lg" style="color: var(--blue-suit);">
-              <svg viewBox="0 0 24 24"><path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3-8c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z"/></svg>
-            </span>
-            <span class="objective-badge">Decisiones en Tiempo Real</span>
-          </div>
-          <h4>2. Practicar la toma de decisiones</h4>
-          <p>Ejercitar el juicio táctico rápido para decidir cuándo presionar, replegarse o asumir riesgos medidos.</p>
-        </div>
-
-        <div class="objective-card">
-          <div class="objective-top">
-            <span class="flat-icon flat-icon-lg" style="color: #34d399;">
-              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
-            </span>
-            <span class="objective-badge">Custodia de Activos</span>
-          </div>
-          <h4>3. Proteger el capital corporativo</h4>
-          <p>Comprender cómo un descuido en la custodia de los activos esenciales puede quebrar a toda la organización.</p>
-        </div>
-
-        <div class="objective-card">
-          <div class="objective-top">
-            <span class="flat-icon flat-icon-lg" style="color: #f97316;">
-              <svg viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-            </span>
-            <span class="objective-badge">Ventaja Dinámica</span>
-          </div>
-          <h4>4. Aplicar estrategias de competencia</h4>
-          <p>Diseñar tácticas ofensivas y defensivas adaptables a los movimientos y debilidades de la firma rival.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección: Conceptos de Administración -->
-  <section id="conceptos">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">
-          <span class="flat-icon" style="color: var(--gold-bright);">
-            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-          </span>
-          Marco Teórico &amp; Práctico
-        </span>
-        <h2 class="section-title">Conceptos <span>Administrativos</span></h2>
-        <p class="section-description">
-          Cómo los pilares gerenciales cobran vida en cada segundo de la contienda deportiva.
+          A través del juego se trabajan seis conceptos clave de la Administración de Empresas:
         </p>
       </div>
 
       <div class="concepts-grid">
         <!-- Capital -->
         <div class="concept-card">
-          <div class="concept-top">
-            <div class="icon-badge">
-              <span class="flat-icon">
-                <svg viewBox="0 0 24 24"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
-              </span>
-            </div>
-            <div class="concept-name">Capital</div>
-          </div>
-          <p class="concept-short">El recurso vital que sustenta la supervivencia y crecimiento de la firma.</p>
-          <div class="context-box">
-            <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;"><svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg></span>
-              En los Negocios
-            </div>
-            Activos indispensables para operar. Perderlo genera insolvencia y quiebra.
-          </div>
-          <div class="context-box game">
-            <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
-              En la Cancha
-            </div>
-            El balón asignado. Si el rival lo captura, la empresa queda fuera de juego.
-          </div>
-        </div>
-
-        <!-- Estrategia -->
-        <div class="concept-card">
-          <div class="concept-top">
-            <div class="icon-badge">
-              <span class="flat-icon">
-                <svg viewBox="0 0 24 24"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>
-              </span>
-            </div>
-            <div class="concept-name">Estrategia</div>
-          </div>
-          <p class="concept-short">El plan maestro deliberado para anticipar al rival y maximizar ventajas.</p>
-          <div class="context-box">
-            <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;"><svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg></span>
-              En los Negocios
-            </div>
-            Posicionamiento en el mercado y asignación inteligente de recursos limitados.
-          </div>
-          <div class="context-box game">
-            <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
-              En la Cancha
-            </div>
-            Avanzar en bloque compacto o tender una celada táctica para recuperar el balón.
-          </div>
-        </div>
-
-        <!-- Trabajo en Equipo -->
-        <div class="concept-card">
-          <div class="concept-top">
-            <div class="icon-badge">
-              <span class="flat-icon">
-                <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-              </span>
-            </div>
-            <div class="concept-name">Trabajo en Equipo</div>
-          </div>
-          <p class="concept-short">Sinergia donde el resultado del colectivo supera la suma individual.</p>
-          <div class="context-box">
-            <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;"><svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg></span>
-              En los Negocios
-            </div>
-            Colaboración transversal, confianza mutua y alineación hacia metas compartidas.
-          </div>
-          <div class="context-box game">
-            <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
-              En la Cancha
-            </div>
-            Desplazamiento sincronizado en parejas; si uno falla, el capital queda expuesto.
-          </div>
-        </div>
-
-        <!-- Organización -->
-        <div class="concept-card">
-          <div class="concept-top">
-            <div class="icon-badge">
-              <span class="flat-icon">
-                <svg viewBox="0 0 24 24"><path d="M4 10h3v7H4zM10.5 10h3v7h-3zM2 22h19v-3H2zm15-12h3v7h-3zM12 1L2 6v2h19V6z"/></svg>
-              </span>
-            </div>
-            <div class="concept-name">Organización</div>
-          </div>
-          <p class="concept-short">Estructuración nítida de roles, responsabilidades y líneas de mando.</p>
-          <div class="context-box">
-            <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;"><svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg></span>
-              En los Negocios
-            </div>
-            Organigrama funcional y delegación efectiva de autoridad en cada división.
-          </div>
-          <div class="context-box game">
-            <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
-              En la Cancha
-            </div>
-            Distribución clara entre duplas de custodia (defensa) y duplas de incursión (captura).
-          </div>
+          <div class="concept-icon-wrap">⚽💰</div>
+          <h4>Capital</h4>
+          <p>Representado por el <strong>balón</strong>. El recurso más valioso que cada empresa debe custodiar.</p>
         </div>
 
         <!-- Competencia -->
         <div class="concept-card">
-          <div class="concept-top">
-            <div class="icon-badge">
-              <span class="flat-icon">
-                <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
-              </span>
-            </div>
-            <div class="concept-name">Competencia</div>
-          </div>
-          <p class="concept-short">La rivalidad directa donde cada acción genera una reacción del adversario.</p>
-          <div class="context-box">
-            <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;"><svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg></span>
-              En los Negocios
-            </div>
-            Fuerzas de Porter, presión de competidores y necesidad constante de diferenciación.
-          </div>
-          <div class="context-box game">
-            <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
-              En la Cancha
-            </div>
-            El rival estudia activamente tus puntos ciegos para penetrar y robar el activo.
-          </div>
+          <div class="concept-icon-wrap">⚔️</div>
+          <h4>Competencia</h4>
+          <p>Las dos empresas buscan <strong>obtener el recurso de la otra</strong> para crecer y ganar la ronda.</p>
         </div>
 
-        <!-- Toma de Decisiones -->
+        <!-- Trabajo en equipo -->
         <div class="concept-card">
-          <div class="concept-top">
-            <div class="icon-badge">
-              <span class="flat-icon">
-                <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.28 19.59 10.59 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>
-              </span>
-            </div>
-            <div class="concept-name">Toma de Decisiones</div>
-          </div>
-          <p class="concept-short">Evaluación ágil de riesgos y selección de la alternativa óptima bajo presión.</p>
-          <div class="context-box">
-            <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;"><svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg></span>
-              En los Negocios
-            </div>
-            Respuestas ejecutivas inmediatas ante entornos volátiles e inciertos (VUCA).
-          </div>
-          <div class="context-box game">
-            <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
-              En la Cancha
-            </div>
-            Decidir en milisegundos si salir a cortar el pase, replegarse o resguardar la base.
-          </div>
+          <div class="concept-icon-wrap">🤝</div>
+          <h4>Trabajo en equipo</h4>
+          <p>Los participantes deben <strong>coordinarse en parejas</strong> con los cordones unidos.</p>
+        </div>
+
+        <!-- Organización -->
+        <div class="concept-card">
+          <div class="concept-icon-wrap">📋</div>
+          <h4>Organización</h4>
+          <p>Cada empresa debe <strong>distribuir a sus integrantes</strong> para atacar y defender eficazmente.</p>
+        </div>
+
+        <!-- Estrategia -->
+        <div class="concept-card">
+          <div class="concept-icon-wrap">🧭</div>
+          <h4>Estrategia</h4>
+          <p>Los equipos deben decidir <strong>cómo acercarse al capital rival</strong> y cómo proteger el propio.</p>
+        </div>
+
+        <!-- Toma de decisiones -->
+        <div class="concept-card">
+          <div class="concept-icon-wrap">⏱️</div>
+          <h4>Toma de decisiones</h4>
+          <p>Cada pareja debe decidir <strong>cuándo atacar y cuándo regresar a su base</strong>.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección: Cómo se Juega -->
-  <section id="como-se-juega">
+  <!-- Sección: Las Dos Empresas / Equipos -->
+  <section id="equipos">
     <div class="container">
       <div class="section-header">
-        <span class="section-subtitle">
-          <span class="flat-icon" style="color: var(--gold-bright);">
-            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-          </span>
-          Protocolo de Operaciones
-        </span>
-        <h2 class="section-title">Cómo se <span>Juega</span></h2>
+        <span class="section-subtitle">🏢 Los Equipos en Competencia</span>
+        <h2 class="section-title">Las Dos <span>Empresas</span></h2>
         <p class="section-description">
-          Seis fases tácticas cronológicas que conducen a la fusión y conquista corporativa.
+          Se divide el grupo en dos empresas. Cada empresa tiene una <strong>base</strong>, que representa su sede empresarial.
         </p>
       </div>
 
-      <div class="steps-timeline">
-        <div class="step-card">
-          <div class="step-header">
-            <span class="flat-icon flat-icon-lg" style="color:var(--gold-bright);">
-              <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
-            </span>
-            <span class="step-number">01</span>
+      <div class="teams-grid">
+        <!-- Empresa A: Con Chaqueta -->
+        <div class="team-card con-chaqueta">
+          <div class="team-card-header">
+            <span class="team-icon">🧥⚽</span>
+            <div>
+              <h3>Con Chaqueta</h3>
+              <p style="color: var(--blue-team); font-size: 1.2rem; font-weight: 600;">Empresa A</p>
+            </div>
           </div>
-          <h4>Se forman dos empresas</h4>
-          <p>Los participantes se dividen en dos corporaciones (Empresa A y Empresa B), nombran su directorio y establecen sus bases en extremos opuestos de la cancha.</p>
-          <div class="tactical-note">
-            <span class="flat-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></span>
-            Táctica: Definir si ser una organización conservadora o de alta expansión.
-          </div>
+          <ul class="team-points">
+            <li>
+              <span class="point-icon">⚽</span>
+              <span>Tiene un <strong>balón</strong> que representa su capital.</span>
+            </li>
+            <li>
+              <span class="point-icon">🏢</span>
+              <span>Tiene una <strong>base</strong>, que representa su sede empresarial.</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="step-card">
-          <div class="step-header">
-            <span class="flat-icon flat-icon-lg" style="color:var(--gold-bright);">
-              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg>
-            </span>
-            <span class="step-number">02</span>
+        <!-- Empresa B: Sin Chaqueta -->
+        <div class="team-card sin-chaqueta">
+          <div class="team-card-header">
+            <span class="team-icon">👕⚽</span>
+            <div>
+              <h3>Sin Chaqueta</h3>
+              <p style="color: var(--red-team); font-size: 1.2rem; font-weight: 600;">Empresa B</p>
+            </div>
           </div>
-          <h4>Cada empresa recibe su capital (balón)</h4>
-          <p>El balón oficial simboliza el activo financiero más preciado de la compañía y se deposita inicialmente en la bóveda de cada cuartel.</p>
-          <div class="tactical-note">
-            <span class="flat-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></span>
-            Táctica: El capital es finito; perderlo suspende tu margen operativo.
-          </div>
-        </div>
-
-        <div class="step-card">
-          <div class="step-header">
-            <span class="flat-icon flat-icon-lg" style="color:var(--blue-suit);">
-              <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-            </span>
-            <span class="step-number">03</span>
-          </div>
-          <h4>Operaciones exclusivas en parejas</h4>
-          <p>Nadie actúa individualmente. Cada jugador debe coordinar permanentemente sus desplazamientos con su pareja designada sin desconectarse.</p>
-          <div class="tactical-note">
-            <span class="flat-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></span>
-            Táctica: La solidez corporativa descansa en la confianza mutua.
-          </div>
-        </div>
-
-        <div class="step-card">
-          <div class="step-header">
-            <span class="flat-icon flat-icon-lg" style="color:#34d399;">
-              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
-            </span>
-            <span class="step-number">04</span>
-          </div>
-          <h4>Custodia perimetral del capital</h4>
-          <p>Las parejas de retaguardia blindan las líneas de penetración rivales sin cometer faltas reglamentarias, resguardando la base.</p>
-          <div class="tactical-note">
-            <span class="flat-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></span>
-            Táctica: Dos segundos de distracción permiten la fuga del capital.
-          </div>
-        </div>
-
-        <div class="step-card">
-          <div class="step-header">
-            <span class="flat-icon flat-icon-lg" style="color:#f97316;">
-              <svg viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9z"/></svg>
-            </span>
-            <span class="step-number">05</span>
-          </div>
-          <h4>Fusión de empresas</h4>
-          <p>Al concretarse la captura de ambos activos o finalizar el tiempo regular, la empresa ganadora absorbe al rival mediante una fusión.</p>
-          <div class="tactical-note">
-            <span class="flat-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></span>
-            Táctica: Reestructuración inmediata del nuevo consorcio fusionado.
-          </div>
-        </div>
-
-        <div class="step-card">
-          <div class="step-header">
-            <span class="flat-icon flat-icon-lg" style="color:var(--gold-bright);">
-              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            </span>
-            <span class="step-number">06</span>
-          </div>
-          <h4>El nuevo reto</h4>
-          <p>La nueva entidad corporativa unificada asume un reto de nivel superior: optimizar procesos internos y enfrentarse a la máxima prueba gerencial.</p>
-          <div class="tactical-note">
-            <span class="flat-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></span>
-            Táctica: Liderazgo integral y celebración del triunfo colectivo.
-          </div>
+          <ul class="team-points">
+            <li>
+              <span class="point-icon">⚽</span>
+              <span>Tiene otro <strong>balón</strong> que representa su capital.</span>
+            </li>
+            <li>
+              <span class="point-icon">🏢</span>
+              <span>Tiene una <strong>base</strong>, que representa su sede empresarial.</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección: Empresas en Competencia -->
-  <section id="empresas">
+  <!-- Sección: Mecánica del Juego -->
+  <section id="mecanica" style="background: rgba(10, 20, 16, 0.5);">
     <div class="container">
       <div class="section-header">
-        <span class="section-subtitle">
-          <span class="flat-icon" style="color: var(--gold-bright);">
-            <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12z"/></svg>
-          </span>
-          Corporaciones en Disputa
-        </span>
-        <h2 class="section-title">Empresas en <span>Competencia</span></h2>
-        <p class="section-description">
-          Dos filosofías directivas antagónicas sobre el terreno de juego.
+        <span class="section-subtitle">👟 Reglas de Juego</span>
+        <h2 class="section-title">La <span>Mecánica</span></h2>
+      </div>
+
+      <div class="mecanica-steps">
+        <div class="mecanica-card">
+          <div class="mecanica-num">01 👟</div>
+          <h4>Cordones Unidos</h4>
+          <p>Los jugadores se organizan en parejas y unen sus zapatos mediante los cordones para representar que <strong>dentro de una empresa las personas deben trabajar coordinadamente</strong>.</p>
+        </div>
+
+        <div class="mecanica-card">
+          <div class="mecanica-num">02 🏃</div>
+          <h4>Inicio de Ronda</h4>
+          <p>Cuando comienza la ronda, las parejas se desplazan por el campo buscando la mejor posición táctica.</p>
+        </div>
+
+        <div class="mecanica-card">
+          <div class="mecanica-num">03 ⚽</div>
+          <h4>Robar el Capital</h4>
+          <p>Las parejas deben incursionar en el terreno contrario y tomar el balón que representa el capital del rival.</p>
+        </div>
+
+        <div class="mecanica-card">
+          <div class="mecanica-num">04 🏁</div>
+          <h4>Ganar la Ronda</h4>
+          <p>La primera empresa que consiga llevar el capital rival hasta su base <strong>gana la ronda</strong>.</p>
+        </div>
+      </div>
+
+      <!-- Diagrama de Flujo del Objetivo -->
+      <div class="objective-banner">
+        <h4>🎯 El Objetivo en Cada Ronda:</h4>
+        <div class="objective-flow">
+          <span class="flow-step">Entrar al territorio rival</span>
+          <span class="flow-arrow">➔</span>
+          <span class="flow-step">Tomar su capital</span>
+          <span class="flow-arrow">➔</span>
+          <span class="flow-step">Regresar a la propia empresa con el balón</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Ganador & ¿Por qué es de Administración? -->
+  <section id="por-que">
+    <div class="container">
+      <!-- Tarjeta del Ganador -->
+      <div class="winner-card">
+        <div class="trophy-icon">🏆</div>
+        <h3>¿Quién es el Ganador?</h3>
+        <p>
+          Se pueden realizar varias rondas. La empresa que consiga <strong>robar el capital de la empresa rival más veces</strong> será la ganadora.
         </p>
       </div>
 
-      <div class="companies-container">
-        <!-- Empresa A -->
-        <div class="company-card empresa-a">
-          <div class="company-header">
-            <div class="company-title-wrap">
-              <span class="flat-icon flat-icon-lg" style="color: var(--blue-suit);">
-                <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
-              </span>
-              <div>
-                <h3>Con Chaqueta</h3>
-              </div>
-            </div>
-          </div>
+      <div class="section-header" style="margin-top: 4.5rem;">
+        <span class="section-subtitle">📚 Reflexión Académica</span>
+        <h2 class="section-title">¿Por qué es de <span>Administración de Empresas</span>?</h2>
+      </div>
 
-          <p class="company-mission">
-            <strong>Misión:</strong> Salvaguardar el capital corporativo en la base mediante un bloque defensivo ordenado y contragolpes letales de precisión.
+      <div class="why-admin-grid">
+        <div class="why-admin-box">
+          <h4>⚽ El Balón es el Capital</h4>
+          <p>
+            Porque el balón no representa simplemente una pelota: <strong>representa el capital de una empresa</strong>.
           </p>
-
-          <div class="company-pairs">
-            <h5>
-              <span class="flat-icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></span>
-              Estructura Departamental
-            </h5>
-            <div class="pair-item">
-              <span class="pair-role">
-                <span class="flat-icon" style="color:var(--blue-suit);"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></span>
-                Pareja Custodia (Finanzas)
-              </span>
-              Blindaje perimetral del balón en base propia y contención sin faltas.
-            </div>
-            <div class="pair-item">
-              <span class="pair-role">
-                <span class="flat-icon" style="color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></span>
-                Pareja Expansión (Comercial)
-              </span>
-              Presión inteligente sobre el balón rival y transiciones vertiginosas.
-            </div>
-          </div>
+          <p style="margin-top: 1rem;">
+            El juego muestra que una empresa necesita <strong>organización, coordinación, estrategia y trabajo en equipo</strong> para proteger sus recursos y competir con otras empresas.
+          </p>
         </div>
 
-        <!-- Empresa B -->
-        <div class="company-card empresa-b">
-          <div class="company-header">
-            <div class="company-title-wrap">
-              <span class="flat-icon flat-icon-lg" style="color: var(--red-suit);">
-                <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
-              </span>
-              <div>
-                <h3>Sin Chaqueta</h3>
-              </div>
-            </div>
-          </div>
-
-          <p class="company-mission">
-            <strong>Misión:</strong> Forzar el error del contrincante mediante presión asfixiante e incursiones continuas al territorio enemigo.
+        <div class="why-admin-box">
+          <h4>🤝 Integración Interdisciplinaria</h4>
+          <p>
+            🏃‍♂️ <strong>Educación Física</strong> aporta el movimiento, la coordinación motriz y la actividad deportiva en la cancha.
           </p>
-
-          <div class="company-pairs">
-            <h5>
-              <span class="flat-icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></span>
-              Estructura Departamental
-            </h5>
-            <div class="pair-item">
-              <span class="pair-role">
-                <span class="flat-icon" style="color:var(--red-suit);"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></span>
-                Pareja Custodia (Operaciones)
-              </span>
-              Vigilancia activa, achique de espacios y anticipación de pases.
-            </div>
-            <div class="pair-item">
-              <span class="pair-role">
-                <span class="flat-icon" style="color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></span>
-                Pareja Expansión (Innovación)
-              </span>
-              Ataque veloz sincronizado para extraer el activo ajeno en segundos.
-            </div>
-          </div>
+          <p style="margin-top: 1rem;">
+            💼 <strong>Administración de Empresas</strong> aporta el concepto de capital, competencia económica, organización, estrategia y trabajo en equipo coordinado.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Sección: Galería -->
-  <section id="galeria">
+  <section id="galeria" style="background: rgba(10, 20, 16, 0.6);">
     <div class="container">
       <div class="section-header">
-        <span class="section-subtitle">
-          <span class="flat-icon" style="color: var(--gold-bright);">
-            <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-          </span>
-          Registro Visual
-        </span>
+        <span class="section-subtitle">📸 Registro Visual</span>
         <h2 class="section-title">Galería de <span>Actividades</span></h2>
-        <p class="section-description">
-          Testimonio visual del despliegue táctico, la demarcación del campo y la intensidad del juego gerencial.
-        </p>
-      </div>
-
-      <div class="gallery-filters">
-        <button class="filter-btn active" data-category="todas">Todas las fotos</button>
-        <button class="filter-btn" data-category="campo">El Campo</button>
-        <button class="filter-btn" data-category="equipos">Los Equipos</button>
-        <button class="filter-btn" data-category="estrategia">Pizarra &amp; Estrategia</button>
-        <button class="filter-btn" data-category="accion">Actividades &amp; Acción</button>
       </div>
 
       <div class="gallery-grid">
-        <div class="gallery-item" data-category="campo">
-          <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=800&q=80" alt="Cancha Táctica" />
-          <div class="gallery-overlay">
-            <h5>La Cancha Táctica</h5>
-            <p>Distribución de zonas empresariales delimitadas.</p>
-          </div>
+        <div class="gallery-card">
+          <img src="assets/capital-en-juego-emblema.jpg" alt="Emblema Oficial Capital en Juego" />
+          <div class="gallery-caption">Emblema Oficial: Con Chaqueta vs Sin Chaqueta</div>
         </div>
-
-        <div class="gallery-item" data-category="equipos">
-          <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=800&q=80" alt="Coordinación en Parejas" />
-          <div class="gallery-overlay">
-            <h5>Coordinación en Parejas</h5>
-            <p>Sincronización táctica constante entre duplas.</p>
-          </div>
+        <div class="gallery-card">
+          <img src="assets/campo-juego-1.jpg" alt="El Campo de Juego" />
+          <div class="gallery-caption">La Cancha y las Bases Empresariales</div>
         </div>
-
-        <div class="gallery-item" data-category="accion">
-          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" alt="Disputa por el Capital" />
-          <div class="gallery-overlay">
-            <h5>Disputa por el Capital</h5>
-            <p>Recuperación del balón en territorio contrario.</p>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-category="estrategia">
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Pizarra de Estrategia" />
-          <div class="gallery-overlay">
-            <h5>Pizarra Estratégica</h5>
-            <p>Alineación de objetivos durante los tiempos fuera.</p>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-category="equipos">
-          <img src="https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=800&q=80" alt="Celebración Corporativa" />
-          <div class="gallery-overlay">
-            <h5>Celebración y Victoria</h5>
-            <p>Consolidación final de ambos capitales en base.</p>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-category="accion">
-          <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=800&q=80" alt="Toma de Decisiones" />
-          <div class="gallery-overlay">
-            <h5>Decisiones en Plena Jugada</h5>
-            <p>Lectura inmediata de movimientos rivales.</p>
-          </div>
+        <div class="gallery-card">
+          <img src="assets/campo-juego-2.jpg" alt="Disputa en la Cancha" />
+          <div class="gallery-caption">Estrategia en Parejas</div>
         </div>
       </div>
     </div>
@@ -723,21 +380,21 @@
           <div class="brand-logo">
             <img src="assets/capital-en-juego-emblema.jpg" alt="Logo Capital en Juego" />
           </div>
-          <div class="brand-text">CAPITAL EN <span>JUEGO</span></div>
+          <div class="brand-text">capital en <span>juego</span></div>
         </a>
 
         <div class="footer-quote">
-          «La estrategia también juega.»
+          «El balón representa el capital. La estrategia también juega.»
         </div>
       </div>
 
       <div class="footer-copy">
-        &copy; 2026 Capital en Juego. Todos los derechos reservados.
+        &copy; 2026 Capital en Juego — Administración de Empresas &amp; Deporte.
       </div>
     </div>
   </footer>
 
-  <!-- Script JavaScript con motor de animaciones -->
-  <script src="js/main.js?v=5.0"></script>
+  <!-- Script JavaScript con motor de animaciones y confeti -->
+  <script src="js/main.js?v=6.0"></script>
 </body>
 </html>
