@@ -6,19 +6,19 @@
   <title>Capital en Juego — La Estrategia También Juega</title>
   <meta name="description" content="Actividad deportiva y gerencial que une el fútbol con la administración de empresas. La estrategia también juega." />
 
-  <!-- Tipografías Premium de Google Fonts -->
+  <!-- Tipografías Retro Sports & Luxury de Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Righteous&display=swap" rel="stylesheet">
 
-  <!-- Hoja de Estilos CSS con Animaciones -->
-  <link rel="stylesheet" href="css/styles.css?v=3.0" />
+  <!-- Hoja de Estilos CSS con Animaciones Lúdicas -->
+  <link rel="stylesheet" href="css/styles.css?v=4.0" />
 </head>
 <body>
 
-  <!-- Luces ambientales dinámicas de fondo -->
-  <div class="ambient-glow-top"></div>
-  <div class="ambient-glow-side"></div>
+  <!-- Luces de Estadio y Ambiente Cálido -->
+  <div class="ambient-stadium-glow"></div>
+  <div class="ambient-pitch-lines"></div>
 
   <!-- Barra de Navegación con Glassmorphism -->
   <nav class="navbar">
@@ -56,7 +56,7 @@
           Donde las Finanzas y la Pasión <span class="highlight">Se Disputan</span>.
         </h1>
         <p class="lead">
-          Una simulación táctica sobre el campo donde el balón representa el capital financiero de tu empresa. Administra, defiende tus activos y ejecuta absorciones empresariales en tiempo real.
+          Una simulación táctica sobre el campo donde el balón representa el capital financiero de tu empresa. Administra, defiende tus activos y ejecuta fusiones empresariales en tiempo real.
         </p>
         <div class="hero-actions">
           <a href="#como-se-juega" class="btn btn-primary">
@@ -76,37 +76,49 @@
         </div>
       </div>
 
-      <!-- Tarjeta Showcase con la nueva imagen del Emblema -->
+      <!-- Tarjeta Showcase del Emblema Oficial -->
       <div class="hero-card">
         <div class="showcase-badge-wrap">
           <span class="badge-emblema">
-            <span class="flat-icon" style="color: var(--gold-primary); width: 16px; height: 16px;">
+            <span class="flat-icon" style="color: var(--gold-bright); width: 18px; height: 18px;">
               <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
             </span>
             Emblema Oficial
           </span>
         </div>
 
-        <div class="showcase-display">
+        <div class="showcase-display" title="¡Haz clic en el emblema para ver el rebote!">
           <div class="emblem-wrapper">
             <div class="emblem-glow"></div>
+            <!-- Billetes y destellos animados -->
+            <span class="floating-sparkle sparkle-1">💵</span>
+            <span class="floating-sparkle sparkle-2">✨</span>
+            <span class="floating-sparkle sparkle-3">💰</span>
             <img id="showcase-logo-img" class="emblem-img" src="assets/capital-en-juego-emblema.jpg" alt="Emblema Oficial Capital en Juego" />
           </div>
         </div>
 
         <div class="card-caption">
-          Identidad Visual — <strong>«Capital en Juego»</strong>
+          ¡Haz clic en el emblema! — <strong>«La Estrategia También Juega»</strong>
         </div>
       </div>
     </div>
   </header>
+
+  <!-- Cinta Ticker Marquee Animada -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <div class="marquee-item">⚽ FÚTBOL GERENCIAL ✦ LA ESTRATEGIA TAMBIÉN JUEGA ✦ PROTEGE TU CAPITAL ✦ FUSIONES CORPORATIVAS ✦ DUPLAS TÁCTICAS ✦ TIEMPO EXTRA</div>
+      <div class="marquee-item">⚽ FÚTBOL GERENCIAL ✦ LA ESTRATEGIA TAMBIÉN JUEGA ✦ PROTEGE TU CAPITAL ✦ FUSIONES CORPORATIVAS ✦ DUPLAS TÁCTICAS ✦ TIEMPO EXTRA</div>
+    </div>
+  </div>
 
   <!-- Sección: ¿Qué es? -->
   <section id="que-es">
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">
-          <span class="flat-icon" style="color: var(--gold-primary);">
+          <span class="flat-icon" style="color: var(--gold-bright);">
             <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           </span>
           Propuesta de Valor
@@ -159,7 +171,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">
-          <span class="flat-icon" style="color: var(--gold-primary);">
+          <span class="flat-icon" style="color: var(--gold-bright);">
             <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg>
           </span>
           Metas del Programa
@@ -173,7 +185,7 @@
       <div class="objectives-grid">
         <div class="objective-card">
           <div class="objective-top">
-            <span class="flat-icon flat-icon-lg" style="color: var(--gold-primary);">
+            <span class="flat-icon flat-icon-lg" style="color: var(--gold-bright);">
               <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
             </span>
             <span class="objective-badge">100% Sinergia en Cancha</span>
@@ -184,7 +196,7 @@
 
         <div class="objective-card">
           <div class="objective-top">
-            <span class="flat-icon flat-icon-lg" style="color: var(--blue-primary);">
+            <span class="flat-icon flat-icon-lg" style="color: var(--blue-suit);">
               <svg viewBox="0 0 24 24"><path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3-8c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z"/></svg>
             </span>
             <span class="objective-badge">Decisiones en Tiempo Real</span>
@@ -195,7 +207,7 @@
 
         <div class="objective-card">
           <div class="objective-top">
-            <span class="flat-icon flat-icon-lg" style="color: var(--emerald-primary);">
+            <span class="flat-icon flat-icon-lg" style="color: #34d399;">
               <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
             </span>
             <span class="objective-badge">Custodia de Activos</span>
@@ -206,7 +218,7 @@
 
         <div class="objective-card">
           <div class="objective-top">
-            <span class="flat-icon flat-icon-lg" style="color: var(--orange-primary);">
+            <span class="flat-icon flat-icon-lg" style="color: #f97316;">
               <svg viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
             </span>
             <span class="objective-badge">Ventaja Dinámica</span>
@@ -223,7 +235,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">
-          <span class="flat-icon" style="color: var(--gold-primary);">
+          <span class="flat-icon" style="color: var(--gold-bright);">
             <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
           </span>
           Marco Teórico &amp; Práctico
@@ -255,7 +267,7 @@
           </div>
           <div class="context-box game">
             <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;color:var(--emerald-light);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
+              <span class="flat-icon" style="width:16px;height:16px;color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
               En la Cancha
             </div>
             El balón asignado. Si el rival lo captura, la empresa queda fuera de juego.
@@ -282,7 +294,7 @@
           </div>
           <div class="context-box game">
             <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;color:var(--emerald-light);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
+              <span class="flat-icon" style="width:16px;height:16px;color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
               En la Cancha
             </div>
             Avanzar en bloque compacto o tender una celada táctica para recuperar el balón.
@@ -309,7 +321,7 @@
           </div>
           <div class="context-box game">
             <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;color:var(--emerald-light);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
+              <span class="flat-icon" style="width:16px;height:16px;color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
               En la Cancha
             </div>
             Desplazamiento sincronizado en parejas; si uno falla, el capital queda expuesto.
@@ -336,7 +348,7 @@
           </div>
           <div class="context-box game">
             <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;color:var(--emerald-light);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
+              <span class="flat-icon" style="width:16px;height:16px;color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
               En la Cancha
             </div>
             Distribución clara entre duplas de custodia (defensa) y duplas de incursión (captura).
@@ -363,7 +375,7 @@
           </div>
           <div class="context-box game">
             <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;color:var(--emerald-light);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
+              <span class="flat-icon" style="width:16px;height:16px;color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
               En la Cancha
             </div>
             El rival estudia activamente tus puntos ciegos para penetrar y robar el activo.
@@ -390,7 +402,7 @@
           </div>
           <div class="context-box game">
             <div class="context-label">
-              <span class="flat-icon" style="width:16px;height:16px;color:var(--emerald-light);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
+              <span class="flat-icon" style="width:16px;height:16px;color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></span>
               En la Cancha
             </div>
             Decidir en milisegundos si salir a cortar el pase, replegarse o resguardar la base.
@@ -405,7 +417,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">
-          <span class="flat-icon" style="color: var(--gold-primary);">
+          <span class="flat-icon" style="color: var(--gold-bright);">
             <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
           </span>
           Protocolo de Operaciones
@@ -419,7 +431,7 @@
       <div class="steps-timeline">
         <div class="step-card">
           <div class="step-header">
-            <span class="flat-icon flat-icon-lg" style="color:var(--gold-primary);">
+            <span class="flat-icon flat-icon-lg" style="color:var(--gold-bright);">
               <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
             </span>
             <span class="step-number">01</span>
@@ -434,7 +446,7 @@
 
         <div class="step-card">
           <div class="step-header">
-            <span class="flat-icon flat-icon-lg" style="color:var(--gold-primary);">
+            <span class="flat-icon flat-icon-lg" style="color:var(--gold-bright);">
               <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg>
             </span>
             <span class="step-number">02</span>
@@ -449,7 +461,7 @@
 
         <div class="step-card">
           <div class="step-header">
-            <span class="flat-icon flat-icon-lg" style="color:var(--blue-primary);">
+            <span class="flat-icon flat-icon-lg" style="color:var(--blue-suit);">
               <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
             </span>
             <span class="step-number">03</span>
@@ -464,7 +476,7 @@
 
         <div class="step-card">
           <div class="step-header">
-            <span class="flat-icon flat-icon-lg" style="color:var(--emerald-primary);">
+            <span class="flat-icon flat-icon-lg" style="color:#34d399;">
               <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
             </span>
             <span class="step-number">04</span>
@@ -479,7 +491,7 @@
 
         <div class="step-card">
           <div class="step-header">
-            <span class="flat-icon flat-icon-lg" style="color:var(--orange-primary);">
+            <span class="flat-icon flat-icon-lg" style="color:#f97316;">
               <svg viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9z"/></svg>
             </span>
             <span class="step-number">05</span>
@@ -494,7 +506,7 @@
 
         <div class="step-card">
           <div class="step-header">
-            <span class="flat-icon flat-icon-lg" style="color:var(--gold-primary);">
+            <span class="flat-icon flat-icon-lg" style="color:var(--gold-bright);">
               <svg viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2z"/></svg>
             </span>
             <span class="step-number">06</span>
@@ -515,7 +527,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">
-          <span class="flat-icon" style="color: var(--gold-primary);">
+          <span class="flat-icon" style="color: var(--gold-bright);">
             <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12z"/></svg>
           </span>
           Corporaciones en Disputa
@@ -531,12 +543,12 @@
         <div class="company-card empresa-a">
           <div class="company-header">
             <div class="company-title-wrap">
-              <span class="flat-icon flat-icon-lg" style="color: var(--blue-primary);">
+              <span class="flat-icon flat-icon-lg" style="color: var(--blue-suit);">
                 <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
               </span>
               <div>
                 <h3>Empresa A</h3>
-                <span style="color:var(--blue-primary);font-size:0.85rem;font-weight:700;">Corbata Azul</span>
+                <span style="color:var(--blue-suit);font-family:var(--font-retro);font-size:0.95rem;">Corbata Azul</span>
               </div>
             </div>
             <span class="company-tag">Visión Patrimonial</span>
@@ -553,14 +565,14 @@
             </h5>
             <div class="pair-item">
               <span class="pair-role">
-                <span class="flat-icon" style="color:var(--blue-primary);"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></span>
+                <span class="flat-icon" style="color:var(--blue-suit);"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></span>
                 Pareja Custodia (Finanzas)
               </span>
               Blindaje perimetral del balón en base propia y contención sin faltas.
             </div>
             <div class="pair-item">
               <span class="pair-role">
-                <span class="flat-icon" style="color:var(--gold-primary);"><svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></span>
+                <span class="flat-icon" style="color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></span>
                 Pareja Expansión (Comercial)
               </span>
               Presión inteligente sobre el balón rival y transiciones vertiginosas.
@@ -572,12 +584,12 @@
         <div class="company-card empresa-b">
           <div class="company-header">
             <div class="company-title-wrap">
-              <span class="flat-icon flat-icon-lg" style="color: var(--orange-primary);">
+              <span class="flat-icon flat-icon-lg" style="color: var(--red-suit);">
                 <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
               </span>
               <div>
                 <h3>Empresa B</h3>
-                <span style="color:var(--orange-primary);font-size:0.85rem;font-weight:700;">Corbata Roja</span>
+                <span style="color:var(--red-suit);font-family:var(--font-retro);font-size:0.95rem;">Corbata Roja</span>
               </div>
             </div>
             <span class="company-tag">Enfoque Expansivo</span>
@@ -594,14 +606,14 @@
             </h5>
             <div class="pair-item">
               <span class="pair-role">
-                <span class="flat-icon" style="color:var(--orange-primary);"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></span>
+                <span class="flat-icon" style="color:var(--red-suit);"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></span>
                 Pareja Custodia (Operaciones)
               </span>
               Vigilancia activa, achique de espacios y anticipación de pases.
             </div>
             <div class="pair-item">
               <span class="pair-role">
-                <span class="flat-icon" style="color:var(--gold-primary);"><svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></span>
+                <span class="flat-icon" style="color:var(--gold-bright);"><svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></span>
                 Pareja Expansión (Innovación)
               </span>
               Ataque veloz sincronizado para extraer el activo ajeno en segundos.
@@ -617,7 +629,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">
-          <span class="flat-icon" style="color: var(--gold-primary);">
+          <span class="flat-icon" style="color: var(--gold-bright);">
             <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
           </span>
           Registro Visual
@@ -699,9 +711,9 @@
           <div class="brand-text">CAPITAL EN <span>JUEGO</span></div>
         </a>
 
-        <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 500;">
+        <div class="footer-quote">
           «La estrategia también juega.»
-        </p>
+        </div>
       </div>
 
       <div class="footer-copy">
@@ -711,6 +723,6 @@
   </footer>
 
   <!-- Script JavaScript con motor de animaciones -->
-  <script src="js/main.js?v=3.0"></script>
+  <script src="js/main.js?v=4.0"></script>
 </body>
 </html>
