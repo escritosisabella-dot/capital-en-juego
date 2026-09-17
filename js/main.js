@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // 5. Animaciones de revelado elásticas al hacer scroll (Intersection Observer)
-  const revealElements = document.querySelectorAll('.concept-card, .team-card, .mecanica-card, .why-admin-box, .gallery-card, .section-header, .concept-lead-box, .winner-card, .objective-banner');
+  const revealElements = document.querySelectorAll('.concept-card, .team-card, .mecanica-card, .why-admin-box, .section-header, .concept-lead-box, .winner-card, .objective-banner');
   
   revealElements.forEach(el => el.classList.add('reveal-init'));
 
