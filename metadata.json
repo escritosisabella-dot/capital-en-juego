@@ -1,0 +1,6 @@
+{
+  "name": "Capital en Juego",
+  "description": "Actividad deportiva y gerencial que une el fútbol con la administración de empresas. La estrategia también juega.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
