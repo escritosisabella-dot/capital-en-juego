@@ -6,86 +6,61 @@
 
 ---
 
-## 🏛️ Arquitectura del Proyecto
+## 🏛️ Arquitectura del Repositorio
 
-Este repositorio cuenta con una arquitectura modular y organizada que soporta dos modalidades de uso:
+El repositorio está estructurado bajo una arquitectura limpia, profesional e intuitiva:
 
 ```text
 capital_juego/
 │
-├── static-web/                  # 🌐 Versión Web Estática (HTML / CSS / JS Directo)
-│   ├── index.html               # Página web principal (abrible con doble clic)
-│   ├── css/
-│   │   └── style.css            # Hoja de estilos dedicada
-│   ├── js/
-│   │   └── app.js               # Lógica interactiva
-│   └── assets/                  # Logotipos e imágenes estáticas
+├── index.html                   # 🌐 Página Web Principal (Abre directo con doble clic, sin pantalla blanca)
 │
-├── src/                         # ⚛️ Aplicación React 19 + TypeScript + Vite
-│   ├── components/              # Componentes UI organizados modularmente
-│   │   ├── 3d/                  # Visualización 3D del balón (Three.js)
-│   │   │   └── Ball3D.tsx
-│   │   ├── layout/              # Estructura principal
-│   │   │   ├── Navbar.tsx
-│   │   │   ├── Hero.tsx
-│   │   │   └── Footer.tsx
-│   │   ├── modals/              # Ventanas modales
-│   │   │   └── DownloadModal.tsx
-│   │   └── sections/            # Secciones informativas y dinámicas
-│   │       ├── WhatIsIt.tsx
-│   │       ├── Objectives.tsx
-│   │       ├── HowToPlay.tsx
-│   │       ├── CompaniesComparison.tsx
-│   │       ├── CompanyPanel.tsx
-│   │       ├── AdminConcepts.tsx
-│   │       ├── Gallery.tsx
-│   │       └── Learnings.tsx
-│   ├── styles/                  # 🎨 Hojas de estilo y diseño
-│   │   └── index.css            # Estilos globales y Tailwind CSS
-│   ├── data/                    # Datos estructurados del juego
-│   │   └── gameData.ts
+├── css/                         # 🎨 Hojas de Estilo CSS
+│   └── styles.css               # Estilos globales, variables, diseño responsive y efectos visuales
+│
+├── js/                          # ⚡ Lógica Interactiva JavaScript
+│   └── main.js                  # Control de filtros de galería, conmutador de logos y UI
+│
+├── assets/                      # 🖼️ Recursos Multimedia y Gráficos
+│   ├── logo.png                 # Logotipo oficial en lienzo
+│   ├── logo-transparent.png     # Logotipo en formato insignia transparente
+│   ├── logo.svg                 # Versión vectorial SVG
+│   └── hero-bg.jpg              # Imagen de fondo principal
+│
+├── src/                         # ⚛️ Código Fuente Modular (React 19 + TypeScript)
+│   ├── components/              # Componentes clasificados por dominio
+│   │   ├── 3d/                  # Visualización Three.js (Ball3D)
+│   │   ├── layout/              # Navbar, Hero, Footer
+│   │   ├── modals/              # Ventanas modales interactivas
+│   │   └── sections/            # Secciones del juego (Objetivos, Reglas, Empresas, etc.)
+│   ├── styles/                  # Estilos CSS de la versión React
+│   │   └── index.css
+│   ├── data/                    # Datos estructurados del juego (gameData.ts)
 │   ├── utils/                   # Utilidades matemáticas y gráficas
-│   ├── types.ts                 # Definiciones de TypeScript
-│   ├── App.tsx                  # Componente principal
-│   └── main.tsx                 # Entrada React
+│   ├── types.ts                 # Definiciones e interfaces de TypeScript
+│   ├── App.tsx                  # Componente principal React
+│   └── main.tsx                 # Entrada de la aplicación React
 │
-├── public/                      # Recursos multimedia públicos servidos por Vite
-│   ├── downloads/               # Paquetes y archivos para descarga
-│   └── ...                      # Texturas 3D e imágenes de fondo
-│
-├── scripts/                     # Scripts auxiliares de generación gráfica (Python)
-├── index.html                   # Punto de entrada para Vite
-├── package.json                 # Dependencias y scripts de construcción
-├── tsconfig.json                # Configuración de compilación TypeScript
-└── vite.config.ts               # Configuración del empaquetador Vite
+├── public/                      # Recursos y texturas públicas
+├── scripts/                     # Scripts de generación gráfica (Python)
+├── package.json                 # Configuración de dependencias
+└── tsconfig.json                # Configuración TypeScript
 ```
 
 ---
 
-## 🚀 Opciones de Ejecución
+## 🚀 Cómo Visualizar el Proyecto
 
-### Opción A: Abrir Directamente (Sin Instalar Node.js)
-Si solo deseas ver la página web en tu navegador de forma inmediata:
-1. Abre la carpeta `static-web/`.
-2. Haz doble clic en `index.html`.
-3. ¡Listo! Se cargará el diseño con todos sus estilos CSS y JavaScript.
+### 1. Vista Directa (Sin Instalar Nada)
+1. Descarga o clona el repositorio.
+2. Haz **doble clic en `index.html`**.
+3. La página se abrirá inmediatamente en cualquier navegador (Chrome, Edge, Firefox, Safari) mostrando todas las secciones del juego, galería, reglas y estilos activos con **cero errores de pantalla blanca**.
 
 ---
 
-### Opción B: Entorno de Desarrollo React + Vite
-Para correr la aplicación interactiva completa con gráficos 3D y componentes dinámicos:
-
-**Requisitos previos:** [Node.js](https://nodejs.org/) instalado en tu equipo.
-
-1. **Instalar dependencias:**
-   ```bash
-   npm install
-   ```
-2. **Iniciar el servidor de desarrollo:**
-   ```bash
-   npm run dev
-   ```
-3. **Construir para producción:**
-   ```bash
-   npm run build
-   ```
+### 2. Entorno React + TypeScript (Para Desarrolladores)
+Si deseas trabajar con los componentes modulares en React:
+```bash
+npm install
+npm run dev
+```
